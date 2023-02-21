@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <div className="container d-flex justify-content-center mt-5">
-      <h1 className="text-danger shadow">Random User</h1>
+      <h1 className="text-danger shadow fs-1">Random User</h1>
     </div>
   );
 };

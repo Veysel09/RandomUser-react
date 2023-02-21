@@ -21,7 +21,7 @@ function KitchenSinkExample() {
     <Card style={{ width: "18rem" }}>
       <Card.Img variant="top" src="" />
       <Card.Body>
-        <Card.Title className="">Users</Card.Title>
+        <Card.Title className="fs-1 text-warning">Users</Card.Title>
       </Card.Body>
       <ListGroup className="list-group-flush">
         <h2>ss</h2>
@@ -31,8 +31,8 @@ function KitchenSinkExample() {
         </ListGroup.Item>
         <ListGroup.Item>ss</ListGroup.Item>
       </ListGroup>
-      <button className="btn btn-primary" onClick={getUser}>
-      Get User
+      <button className="btn btn-dark" onClick={getUser}>
+        Get User
       </button>
     </Card>
   );
