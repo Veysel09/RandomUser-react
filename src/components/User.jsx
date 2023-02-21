@@ -1,25 +1,16 @@
-import React, { useEffect, useState } from "react";
-import Cards from "./Cards"
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { AiOutlineLinkedin } from "react-icons/ai";
+
+
+// import { AiOutlineMail } from "react-icons/ai";
+// import { BsFillTelephoneFill } from "react-icons/bs";
+// import { AiOutlineLinkedin } from "react-icons/ai";
+
+import KitchenSinkExample from "./KitchenSinkExample";
 
 const User = () => {
-  const [user, setUser] = useState("");
-
-  const getUser = () => {
-    fetch("https://randomuser.me/api")
-      .then((res) => res.json())
-      .then((data) => setUser(data.results[0]));
-  };
-
-  useEffect(() => {
-    getUser();
-  }, []);
-  console.log(user);
+ 
   return (
-    <div>
-      <Cards/>
+    <div className="container text-center d-flex justify-content-center mt-5">
+      <KitchenSinkExample/>
     </div>
   );
 };
